@@ -35,11 +35,11 @@ with open(sys.argv[1],"r") as f:
 				change(data)
                         elif 5.00 > data >= 2.00:
                                 data -= 2.00
-				bench.append("TWO DOLLAR")
+				bench.append("TWO")
 				change(data)
 			elif 2.00 > data >= 1.00:
 				data -= 1.00
-				bench.append("DOLLAR")
+				bench.append("ONE")
 				change(data)
 			elif 1.00 > data >= .50:
 				data -= .50
@@ -63,6 +63,6 @@ with open(sys.argv[1],"r") as f:
 				bench.append("PENNY")
 				change(data)
 			else:
-				print ",".join(bench),
+				print ",".join(bench)
 		change(unit)
 		
